@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
   before_action :set_topic
   before_action :set_post
   before_action :set_comment, only: %i[ show edit update destroy ]
-  load_and_authorize_resource
+  # load_and_authorize_resource
 
   # GET /comments or /comments.json
   def index
