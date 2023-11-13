@@ -69,7 +69,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem 'cancancan'
+  # gem 'cancancan'
 end
 
 gem "devise"
