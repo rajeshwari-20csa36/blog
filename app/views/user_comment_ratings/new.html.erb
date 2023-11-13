@@ -1,0 +1,9 @@
+<h1 class="new-user-comment-rating-title">New user comment rating</h1>
+
+<%= render "form", user_comment_rating: @user_comment_rating %>
+
+<br>
+
+<div class="back-link">
+  <%= link_to "Back to user comment ratings", topic_post_comment_user_comment_ratings_path(@topic, @post, @comment) %>
+</div>

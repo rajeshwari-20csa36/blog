@@ -1,0 +1,67 @@
+<p class="notice"><%= notice %></p>
+
+<!-- Post Section -->
+<div data-controller="posts" class="post-container">
+  <p id="read"></p>
+  <%= hidden_field_tag :topic_id, params[:topic_id] %>
+  <%= hidden_field_tag :post_id, params[:id] %>
+  <%= hidden_field_tag :read_status, Post.post_read_status(@post, current_user) %>
+  <%= render @post %>
+</div>
+
+<!-- Actions Section -->
+<div class="actions">
+  <%= link_to "Edit this post", edit_topic_post_path(params[:topic_id], @post) %> |
+  <%= link_to "Back to posts", topic_posts_path(params[:topic_id]) %>
+  <%= button_to "Destroy this post", topic_post_path(params[:topic_id], @post),
+                method: :delete, data: { turbo_confirm: 'Are you sure' } %>
+</div>
+
+<!-- Comments Section -->
+<div class="comments-container">
+  <div>
+    <p>
+      <strong>Comments:</strong>
+      <%= @post.comments.size %>
+    </p>
+    <% @post.comments.each do |comment| %>
+      <div>
+        <%= link_to comment.content, topic_post_comment_path(params[:topic_id], @post, comment) %> | -
+        <%= comment.user.email %> |
+        <%= link_to "See Ratings", topic_post_comment_user_comment_ratings_path(@post.topic.id, @post, comment.id) %>
+      </div>
+      <div>
+        <%= render "user_comment_ratings/form", comment: comment, user_comment_rating: current_user.user_comment_ratings.new %>
+      </div>
+    <% end %>
+  </div>
+  <div>
+    <%= render 'comments/form', comment: @post.comments.new %>
+  </div>
+</div>
+
+<!-- Tags Section -->
+<small class="tags">
+  <%=
+    raw @post.tags.map(&:name).map {
+      |t| link_to ('#').concat(t), list_tagged_posts_path(t)
+    }.join(' ')
+  %>
+</small>
+
+<!-- Ratings Section -->
+<span class="ratings-container">
+  <p>
+    <strong>Avg Rating:</strong>
+    <%= @post.rating_average %>
+  </p>
+  <% @post.ratings.group(:value).count.each do |key, value| %>
+    <p><%= key %> star present <%= value %> times</p>
+  <% end %>
+</span>
+
+<!-- Add New Rating Section -->
+<div class="add-rating">
+  <h2><strong>Add new rating</strong></h2>
+  <%= render 'ratings/form', rating: Rating.new %>
+</div>

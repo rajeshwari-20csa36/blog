@@ -1,0 +1,22 @@
+<div class="post-container" id="<%= dom_id post %>">
+  <p class="read-status">
+    <%= Post.post_read_status(post, current_user) %>
+  </p>
+  <h2 class="headline"><%= post.headline %></h2>
+
+  <p class="content">
+    <strong>Content:</strong>
+    <%= post.content %>
+  </p>
+
+  <div class="post-image">
+    <% if post.post_image.attached? %>
+      <%= image_tag post.post_image, style: "width: 300px; height: 100px" %>
+    <% end %>
+  </div>
+
+  <p class="user-info">
+    <strong>User :</strong>
+    <%= post.user.email %>
+  </p>
+</div>

@@ -1,0 +1,20 @@
+<%= render 'shared/filter_form' %>
+<h1><%= Post.post_topic(@topic) %> Posts</h1>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <div class="post-container" id="postdiv<%= post.id %>">
+      <%= render 'posts/post_container', post: post %>
+    </div>
+  <% end %>
+</div>
+
+<% if @topic.present? %>
+  <%= link_to "New post", new_topic_post_path(@topic), remote: true, class: "new-post-link" %>
+<% end %>
+
+<p id="new-user-form"></p>
+
+<div class="pagination">
+  <%= pagy_nav(@pagy).html_safe %>
+</div>

@@ -1,0 +1,25 @@
+<div class="post-container">
+  <p class="read-status">
+    <%= post.users.include?(current_user) %>
+  </p>
+  <h2 class="headline"><%= post.headline %></h2>
+
+  <p class="content">
+    <strong>Content:</strong>
+    <%= truncate post.content, length: 50, omission: '...Read More' %>
+  </p>
+
+  <p class="rating">
+    <strong>Avg Rating:</strong>
+    <%= post.rating_average %>
+  </p>
+
+  <p class="comments">
+    <strong>Comments:</strong>
+    <%= post.comments_count %>
+  </p>
+
+  <p class="show-post-link">
+    <%= link_to "Show this post", topic_post_path(post.topic, post) %>
+  </p>
+</div>

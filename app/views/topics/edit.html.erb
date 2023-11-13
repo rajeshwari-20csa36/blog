@@ -1,0 +1,8 @@
+<h1 class="edit-heading">Editing topic</h1>
+
+<%= render "form", topic: @topic %>
+
+<div class="edit-links">
+  <%= link_to "Show this topic", @topic, class: "edit-link" %> |
+  <%= link_to "Back to topics", topics_path, class: "edit-link" %>
+</div>

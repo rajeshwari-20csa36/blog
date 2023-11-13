@@ -1,0 +1,14 @@
+<div class="user-list">
+  <% users.each do |u| %>
+    <% if u.user_comment_ratings.present? %>
+      <div class="user-info">
+        Username: <%= u.email %>
+      </div>
+      <div class="user-comment-ratings">
+        <% u.user_comment_ratings.each do |us| %>
+          <%= render us %>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

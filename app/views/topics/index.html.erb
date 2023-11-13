@@ -1,0 +1,16 @@
+<p class="notice" style="color: green"><%= notice %></p>
+
+<h1 class="topics-heading">Topics</h1>
+
+<div id="topics" class="topics-list">
+  <% @topics.each do |topic| %>
+    <%= render topic %>
+    <p class="show-topic-link">
+      <%= link_to "Show this topic", topic, class: "show-topic-link" %>
+    </p>
+  <% end %>
+</div>
+
+<div class="new-topic-link">
+  <%= link_to "New topic", new_topic_path, class: "new-topic-link" %>
+</div>

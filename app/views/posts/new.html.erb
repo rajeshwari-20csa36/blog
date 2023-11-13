@@ -1,0 +1,7 @@
+<h1 class="new-post-heading">New post</h1>
+
+<%= render "form", post: @post, class: "new-post-form" %>
+
+<div>
+  <%= link_to "Back to posts", topic_posts_path(params[:topic_id]), class: "back-to-posts-link" %>
+</div>

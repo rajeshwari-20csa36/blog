@@ -1,0 +1,7 @@
+<%= form_for(:search, url: posts_path, method: :get, html: {class: 'search-form'}) do |form| %>
+  <div class="form-group">
+    <%= form.label :date, class: 'search-label' %>
+    <%= form.text_field :date, placeholder: "mm/dd/yy - mm/dd/yy", value: date_from_parameters, class: 'search-input' %>
+  </div>
+  <%= form.submit "Show Results", class: 'search-button' %>
+<% end %>

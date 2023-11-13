@@ -1,0 +1,30 @@
+<%= form_with(model: [@topic, @post, rating], class: 'rating-form') do |form| %>
+  <% if rating.errors.any? %>
+    <div class="error-message">
+      <h2><%= pluralize(rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
+
+      <ul>
+        <% rating.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="rating-options">
+    <% Rating::VALUES.each do |value| %>
+      <div class="rating-option">
+        <%= form.radio_button(:value, value, class: 'rating-input') %>
+        <%= form.label value, class: 'rating-label' %>
+      </div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.text_field :post_id, type: :hidden %>
+  </div>
+
+  <div class="submit-button">
+    <%= form.submit class: 'btn btn-primary' %>
+  </div>
+  <% end %>

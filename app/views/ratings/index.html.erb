@@ -1,0 +1,14 @@
+<p style="color: green; font-size: 18px; margin-bottom: 20px;"><%= notice %></p>
+
+<h1 style="font-size: 24px; color: #333;">Ratings</h1>
+
+<div id="ratings">
+  <% @ratings.each do |rating| %>
+    <%= render rating %>
+    <p class="rating-link">
+      <%= link_to "Show this rating", topic_post_rating_path(params[:topic_id], params[:post_id], rating), class: "rating-link" %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New rating", new_topic_post_rating_path(params[:topic_id], params[:post_id]), class: "new-rating-link" %>

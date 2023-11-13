@@ -1,0 +1,9 @@
+<h1 style="font-size: 24px; color: #333;">New rating</h1>
+
+<%= render "form", rating: @rating %>
+
+<br>
+
+<div>
+  <%= link_to "Back to ratings", topic_post_ratings_path(params[:topic_id], params[:post_id]), class: "back-link" %>
+</div>

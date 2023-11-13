@@ -1,0 +1,13 @@
+<h1 class="page-title">Home</h1>
+
+<div class="navigation">
+  <% if user_signed_in? %>
+    <%= link_to 'See All Topics', topics_path, class: "nav-link" %> |
+    <%= link_to 'See All Posts', posts_path, class: "nav-link" %> |
+    <%= link_to 'Sign Out', destroy_user_session_path, class: "nav-link", data: { turbo_confirm: 'Are you sure?', turbo_method: :delete } %> |
+    <%= link_to 'Edit Profile', edit_user_registration_path, class: "nav-link" %>
+  <% else %>
+    <%= link_to 'Sign Up', new_user_registration_path, class: "nav-link" %> |
+    <%= link_to 'Sign In', new_user_session_path, class: "nav-link" %>
+  <% end %>
+</div>

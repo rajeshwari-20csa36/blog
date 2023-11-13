@@ -1,0 +1,23 @@
+<%= form_with(model: tag, class: "tag-form") do |form| %>
+  <% if tag.errors.any? %>
+    <div class="error-message">
+      <h2><%= pluralize(tag.errors.count, "error") %> prohibited this tag from being saved:</h2>
+
+      <ul>
+        <% tag.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, class: "label" %>
+    <%= form.text_field :name, class: "text-field" %>
+  </div>
+
+  <div>
+    <%= form.submit class: "submit-button" %>
+  </div>
+  </div>
+<%end %>

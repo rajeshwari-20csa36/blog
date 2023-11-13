@@ -1,0 +1,27 @@
+<%= form_with(model: [@topic, @post, comment, user_comment_rating], url: topic_post_comment_user_comment_ratings_path(@topic, @post, comment), class: "user-comment-rating-form") do |form| %>
+  <% if user_comment_rating.errors.any? %>
+    <div class="error-message">
+      <h2><%= pluralize(user_comment_rating.errors.count, "error") %> prohibited this user_comment_rating from being saved:</h2>
+
+      <ul>
+        <% user_comment_rating.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="rating-options">
+    <% Rating::VALUES.each do |value| %>
+      <div class="rating-option">
+        <%= form.radio_button(:value, value, class: "rating-input") %>
+        <%= form.label(value, class: "rating-label") %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="submit-button">
+    <%= form.submit(class: "submit-button") %>
+  </div>
+  </div>
+<%end %>

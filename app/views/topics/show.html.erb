@@ -1,0 +1,10 @@
+<p class="notice" style="color: green"><%= notice %></p>
+
+<%= render 'posts/list_posts' %>
+
+<div class="topic-actions">
+  <%= link_to "Edit this topic", edit_topic_path(@topic), class: "topic-action" %> |
+  <%= link_to "Back to topics", topics_path, class: "topic-action" %>
+
+  <%= button_to "Destroy this topic", @topic, method: :delete, data: { turbo_confirm: 'Are you sure' }, class: "topic-action-button" %>
+</div>

@@ -1,0 +1,1119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "jquery-ui.css";
+
+#loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: url("https://i.gifer.com/ZKZg.gif") 50% 50% no-repeat rgb(15 10 10 /59%);
+}
+/* styles.css */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+/* styles.css */
+.topic-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+/* styles.css */
+.topic-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+/* styles.css */
+.edit-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.edit-links {
+    margin-top: 20px;
+}
+
+.edit-link {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+/* styles.css */
+.topics-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.notice {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.topics-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.show-topic-link {
+    margin: 10px 0;
+}
+
+.new-topic-link {
+    margin-top: 20px;
+}
+
+.new-topic-link a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.new-topic-link a:hover {
+    text-decoration: underline;
+}
+/* styles.css */
+.new-topic-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.back-to-topics-link {
+    margin-top: 20px;
+}
+
+.back-to-topics-link a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.back-to-topics-link a:hover {
+    text-decoration: underline;
+}
+/* styles.css */
+.notice {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.topic-actions {
+    margin-top: 20px;
+}
+
+.topic-action {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.topic-action-button {
+    background-color: #d9534f;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.topic-action-button:hover {
+    background-color: #c9302c;
+}
+/* styles.css */
+.user-comment-rating-form {
+    margin: 20px 0;
+}
+
+.error-message {
+    color: red;
+}
+
+.rating-options {
+    margin-top: 10px;
+}
+
+.rating-option {
+    margin-right: 20px;
+}
+
+.rating-input {
+    margin-right: 5px;
+}
+
+.rating-label {
+    font-weight: bold;
+}
+
+.submit-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+.user-list {
+    margin: 20px 0;
+}
+
+.user-info {
+    font-weight: bold;
+}
+
+.user-comment-ratings {
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+.user-comment-rating {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.rating-value {
+    font-weight: bold;
+}
+
+.comment-id, .user-id {
+    margin-top: 5px;
+    color: #666;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+.edit-user-comment-rating-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.user-comment-rating-links {
+    margin-top: 20px;
+}
+
+.user-comment-rating-links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.user-comment-rating-links a:hover {
+    text-decoration: underline;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+.notice {
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.user-comment-ratings-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.user-comment-ratings {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.divider {
+    font-weight: bold;
+    color: #999;
+    margin-top: 20px;
+}
+
+.new-user-comment-rating-link {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.new-user-comment-rating-link:hover {
+    background-color: #0056b3;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+.new-user-comment-rating-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.back-link {
+    margin-top: 20px;
+}
+
+.back-link a {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.back-link a:hover {
+    background-color: #0056b3;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+.notice {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-comment-rating {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+.actions button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #bd2130;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+.tag-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+.tag-info {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.tag-info p {
+    margin: 0;
+}
+
+.tag-info strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+
+.edit-tag-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tag-actions {
+    margin-top: 20px;
+}
+
+.show-tag-link, .back-to-tags-link {
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue color, you can change this to your desired color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.show-tag-link:hover, .back-to-tags-link:hover {
+    background-color: #0056b3; /* Darker blue color for hover effect, you can change this */
+}
+/* Add this to your CSS file (e.g., styles.css) */
+
+.notice {
+    color: green;
+}
+
+.tags-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.show-tag-link {
+    padding: 5px 10px;
+    background-color: #007bff; /* Blue color, you can change this to your desired color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.show-tag-link:hover {
+    background-color: #0056b3; /* Darker blue color for hover effect, you can change this */
+}
+
+.new-tag-link {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green color for the "New tag" button */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-tag-link:hover {
+    background-color: #1e7e34; /* Darker green color for hover effect */
+}
+/* Add this to your CSS file (e.g., styles.css) */
+
+.new-tag-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.back-to-tags-link {
+    padding: 10px 20px;
+    background-color: #dc3545; /* Red color for the "Back to tags" link */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-tags-link:hover {
+    background-color: #bd2130; /* Darker red color for hover effect */
+}
+/* Add this to your CSS file (e.g., styles.css) */
+
+.notice {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tag-details {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.tag-actions {
+    text-align: center;
+}
+
+.edit-tag-link, .back-to-tags-link, .destroy-tag-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.edit-tag-link {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.edit-tag-link:hover {
+    background-color: #0056b3;
+}
+
+.back-to-tags-link {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.back-to-tags-link:hover {
+    background-color: #555e63;
+}
+
+.destroy-tag-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.destroy-tag-button:hover {
+    background-color: #bd2130;
+}
+/* Add this to your CSS file (e.g., styles.css) */
+
+.custom-alert {
+    background-color: #ffc107;
+    color: #333;
+    border: 1px solid #e0a800;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.custom-alert strong {
+    font-weight: bold;
+}
+
+.custom-alert .close {
+    position: relative;
+    top: -5px;
+    right: -10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.custom-alert .close:hover {
+    color: #000;
+}
+/* Add this to your CSS file */
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.search-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+/* Add this to your CSS file */
+
+.rating-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.rating-options {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.rating-option {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.rating-input {
+    margin-right: 5px;
+}
+
+.rating-label {
+    font-weight: bold;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 10px;
+}
+/* Add this to your CSS file */
+
+.rating-display {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.rating-display p {
+    font-weight: bold;
+}
+/* Add this to your CSS file */
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.rating-links {
+    margin-top: 20px;
+}
+
+.rating-link {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.rating-link:hover {
+    text-decoration: underline;
+}
+/* Add this to your CSS file */
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.rating-link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.rating-link:hover {
+    text-decoration: underline;
+}
+
+.new-rating-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.new-rating-link:hover {
+    background-color: #0056b3;
+}
+/* Add this to your CSS file */
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+/* Add this to your CSS file */
+
+.rating-actions {
+    margin-top: 20px;
+}
+
+.edit-link,
+.back-link,
+.destroy-button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.edit-link:hover,
+.back-link:hover,
+.destroy-button:hover {
+    background-color: #0056b3;
+}
+
+.destroy-button {
+    background-color: #ff0000;
+}
+
+.destroy-button:hover {
+    background-color: #cc0000;
+}
+/* Add this to your CSS file */
+
+/* Filter form styles */
+.filter-form {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Post container styles */
+.post-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* New post link styles */
+.new-post-link {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 100px; /* Set the desired width */
+    height: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.new-post-link:hover {
+    background-color: #0056b3;
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Your custom CSS styles can be added here to further enhance the appearance. */
+/* Add this to your CSS file */
+
+/* Post container styles */
+.post-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Read status styles */
+.read-status {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Headline styles */
+.headline {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Content styles */
+.content {
+    margin-bottom: 10px;
+}
+
+/* Post image styles */
+.post-image {
+    margin-bottom: 10px;
+}
+
+/* User info styles */
+.user-info {
+    font-style: italic;
+    color: #777;
+}
+/* Add this to your CSS file */
+
+/* Post container styles */
+.post-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Read status styles */
+.read-status {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Headline styles */
+.headline {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Content styles */
+.content {
+    margin-bottom: 10px;
+}
+
+/* Rating styles */
+.rating {
+    margin-bottom: 10px;
+}
+
+/* Comments styles */
+.comments {
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #777;
+}
+
+/* Show post link styles */
+.show-post-link {
+    margin-bottom: 10px;
+}
+/* Add this to your CSS file */
+
+/* Edit post heading styles */
+.edit-post-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Edit post actions styles */
+.edit-post-actions {
+    margin: 20px 0;
+}
+
+/* Show post link styles */
+.show-post-link {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 20px;
+}
+
+/* Back to posts link styles */
+.back-to-posts-link {
+    text-decoration: none;
+    color: #007bff;
+}
+/* Notice styles */
+.notice {
+    color: green;
+    font-weight: bold;
+}
+
+/* List of posts container styles */
+.list-posts-container {
+    /* Add your styles for the list of posts here */
+}
+/* Styles for the New post form */
+.new-post-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.new-post-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.new-post-form input[type="text"],
+.new-post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.new-post-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-post-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the "Back to posts" link */
+.back-to-posts-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.back-to-posts-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Additional styles */
+h1.new-post-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+/* Notice */
+.notice {
+    color: green;
+}
+
+/* Post Section */
+.post-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Actions Section */
+.actions {
+    margin: 10px 0;
+}
+
+/* Comments Section */
+.comments-container {
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Tags Section */
+.tags {
+    margin: 10px 0;
+}
+
+/* Ratings Section */
+.ratings-container {
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Add New Rating Section */
+.add-rating {
+    margin: 10px 0;
+}
+.page-title {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+
+.navigation {
+    margin: 20px 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+

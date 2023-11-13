@@ -1,0 +1,12 @@
+<p class="notice" style="color: green"><%= notice %></p>
+
+<div class="user-comment-rating">
+  <%= render @user_comment_rating %>
+</div>
+
+<div class="actions">
+  <%= link_to "Edit this user comment rating", edit_topic_post_comment_user_comment_rating_path(@user_comment_rating) %> |
+  <%= link_to "Back to user comment ratings", topic_post_comment_user_comment_ratings_path(@user_comment_rating.comment_id) %>
+
+  <%= button_to "Destroy this user comment rating", topic_post_comment_user_comment_ratings_path(@user_comment_rating), method: :delete, data: { turbo_confirm: 'Are you sure' } %>
+</div>

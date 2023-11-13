@@ -1,0 +1,8 @@
+<h1 class="edit-post-heading">Editing post</h1>
+
+<%= render "form", post: @post %>
+
+<div class="edit-post-actions">
+  <%= link_to "Show this post", topic_post_path(@post.topic_id, @post), class: "show-post-link" %> |
+  <%= link_to "Back to posts", topic_posts_path(@post.topic_id), class: "back-to-posts-link" %>
+</div>

@@ -1,0 +1,10 @@
+<h1 style="color: #333;">Editing rating</h1>
+
+<%= render "form", rating: @rating %>
+
+<br>
+
+<div class="rating-links">
+  <%= link_to "Show this rating", @rating, class: "rating-link" %> |
+  <%= link_to "Back to ratings", topic_post_ratings_path(params[:topic_id], params[:post_id]), class: "rating-link" %>
+</div>

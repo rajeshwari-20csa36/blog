@@ -1,0 +1,6 @@
+let x = document.getElementById("new-user-form")
+$(x).show()
+$(x).html("<%= escape_javascript render('form', post:@post) %>")
+$('#submit-button').on("click", function (){
+    $('#loader').show()
+})
